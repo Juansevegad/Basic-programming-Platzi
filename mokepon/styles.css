@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+    background-color: EEEEEE;
+    font-family: "Montserrat", sans-serif;
+}
+
+.title {
+    height: 60px;
+    /* min-width: 420px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: teal;
+    border: 3px solid #ebd671;
+    border-bottom: 0px solid #ebd671;
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.title p {
+    height: 60px;
+}
+
+.subtitle {
+    color: white;
+    font-size: 24px;
+    text-shadow: 6px 6px 17px black;
+}
+
+#pet-selection {
+    min-height: 330px;
+    /* min-width: 420px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #c4dfaa;
+    border: 3px solid #ebd671;
+}
+
+.cards {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    gap: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: space-evenly;
+}
+
+.mokepon-card {
+    width: 33%; /* 160px/560 */
+    max-width: 160px;
+    height: 120px;
+    background: mediumaquamarine;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 5px;
+    border: 3px solid gold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    color: white;
+    box-shadow: 3px 3px 5px green;
+    text-shadow: 2px 2px darkgreen;
+}
+
+.mokepon-card img {
+    width: 80px;
+}
+
+.mokepon-card p {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    background-color: aquamarine;
+}
+
+#button-pet {
+    width: 80px;
+    height: 36px;
+    border: 3px solid gold;
+    border-radius: 18px;
+    margin: 4px;
+    background: mediumaquamarine;
+    color: black;
+    margin-top: 12px;
+    text-shadow: 1px 1px green;
+    box-shadow: 2px 2px green;
+}
+
+#attack-selection {
+    min-height: 140px;
+    background-color: #c4dfaa;
+    border: 3px solid #ebd671;
+    /* min-width: 420px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.attack-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.attack-button {
+    width: 120px;
+    height: 30px;
+    font-size: 16px;
+    border: 2px solid #ebd671;
+    box-shadow: 2px 2px green;
+    margin-left: 4px;
+    margin-right: 4px;
+    text-shadow: 1px 1px black;
+    color: white;
+    border-radius: 12px;
+}
+
+#button-fire {
+    background-color: #eb5353;
+}
+
+#button-fire:disabled {
+    background-color: darkred;
+    /* color: black; */
+    text-shadow: none;
+}
+
+#button-water {
+    background-color: #4d96ff;
+}
+
+#button-water:disabled {
+    background-color: darkblue;
+    /* color: black; */
+    text-shadow: none;
+}
+
+#button-earth {
+    background-color: #cc704b;
+}
+
+#button-earth:disabled {
+    background-color: brown;
+    /* color: black; */
+    text-shadow: none;
+}
+
+#messages {
+    min-height: 140px;
+    background-color: #c4dfaa;
+    border: 3px solid #ebd671;
+    /* min-width: 420px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#result {
+    min-width: 160px;
+    min-height: 60px;
+    margin: 12px 0px 12px 0px;
+    font-size: 18px;
+    border: 2px solid silver;
+    background-color: mediumaquamarine;
+    border-radius: 12px;
+    box-shadow: 0px 0px 12px green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#button-restart {
+    border: none;
+    background-color: mediumaquamarine;
+}
+
+#attacks {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    text-align: center;
+}
+
+#attacks div {
+    border: 3px solid gold;
+}
+
+@media (max-width: 420px) {
+    .title {
+        min-width: none !important;
+        width: 100%;
+        margin-left: -1%;
+        margin-right: 0px;
+        margin-top: 0px;
+        font-size: 24px;
+    }
+    .title p {
+        height: auto;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #attack-selection,
+    #messages,
+    #pet-selection {
+        width: 100%;
+        margin-left: -1%;
+    }
+
+    .attack-selection div {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 5%;
+    }
+}

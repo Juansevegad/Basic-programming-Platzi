@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOKEPON!</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <!-- Section for the pet selection -->
+    <h1 id="title" class="title">
+        <p>🌱💧🔥 Mokepon! 🔥💧🌱</p>
+    </h1>
+    <section id="pet-selection">
+
+        <h2 class="subtitle">Pick your pet</h2>
+        <div class="cards">
+            <input type="radio" name="pet" id="hipodoge" />
+            <label class="mokepon-card" for="hipodoge">
+                <img src="./assets/mokepons_mokepon_hipodoge_attack.png" alt="Hipodoge" />
+                <p>Hipodoge</p>
+            </label>
+
+            <input type="radio" name="pet" id="capipepo" />
+            <label class="mokepon-card" for="capipepo">
+                <img src="./assets/mokepons_mokepon_capipepo_attack.png" alt="Capipepo">
+                <p>Capipepo</p>
+            </label>
+
+            <input type="radio" name="pet" id="ratigueya" />
+            <label class="mokepon-card" for="ratigueya">
+                <img src="./assets/mokepons_mokepon_ratigueya_attack.png" alt="Ratigueya">
+                <p>Ratigueya</p>
+            </label>
+        </div>
+
+        <div class="cards">
+            <input type="radio" name="pet" id="langostelvis" />
+            <label class="mokepon-card" for="langostelvis">Langostelvis</label>
+
+            <input type="radio" name="pet" id="tucapalma" />
+            <label class="mokepon-card" for="tucapalma">Tucapalma</label>
+
+            <input type="radio" name="pet" id="pydos" />
+            <label class="mokepon-card" for="pydos">Pydos</label>
+        </div>
+
+
+        <!-- Hipodoge -> Water
+            Capipepo -> Earth
+            Ratigueya -> Fire
+            Langostelvis -> Water and Fire
+            Tucapalma -> Water and Earth
+            Pydos -> Earth and Fire -->
+
+        <button id="button-pet">Pick!</button>
+    </section>
+
+
+    <!-- Section for the attack selection -->
+    <section id="attack-selection">
+        <div class="attack-selection">
+            <h2 class="subtitle">Pick your attack</h2>
+            <div>
+                <button class="attack-button" id="button-fire">Fire 🔥</button>
+                <button class="attack-button" id="button-water">Water 💧</button>
+                <button class="attack-button" id="button-earth">Earth 🌱</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Section for the user interfase and messages from the game -->
+    <section id="messages">
+        <div id="result">
+            <p id="result-message">Good Luck!</p>
+            <div id="restart">
+                <button id="button-restart">Restart</button>
+            </div>
+        </div>
+        <div id="attacks">
+            <div id="player-attacks">
+                <span id="player-lives">3</span>
+                <span id="player-pet"></span>
+            </div>
+            <div id="enemy-attacks">
+                <span id="enemy-lives">3</span>
+                <span id="enemy-pet"></span>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/mokepon.js"></script>
+
+</body>
+
+</html>
